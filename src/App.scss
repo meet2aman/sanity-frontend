@@ -20,6 +20,7 @@
 }
 
 .app__flex {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +154,7 @@
   }
   div:nth-child(1) {
     &:hover {
-      background-color: #1da1f2;
+      background-color: #000407;
       border-color: #0b65db;
 
       svg {
@@ -175,6 +176,26 @@
     &:hover {
       background-color: #f56040;
       border-color: #db3813;
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+  }
+  div:nth-child(4) {
+    &:hover {
+      background-color: #1da1f2;
+      border-color: #0b65db;
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+  }
+  div:nth-child(5) {
+    &:hover {
+      background-color: #000000;
+      border-color: #e7e4e2;
 
       svg {
         color: var(--white-color);

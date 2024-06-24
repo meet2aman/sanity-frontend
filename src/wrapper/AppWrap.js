@@ -3,6 +3,7 @@ import { NavigationDots, SocialMedia } from "../components";
 
 export const AppWrap = (Component, idName, classNames) =>
   function HOC() {
+    const date = new Date();
     return (
       <div id={idName} className={`app__container ${classNames}`}>
         <SocialMedia />
@@ -10,7 +11,7 @@ export const AppWrap = (Component, idName, classNames) =>
           <Component />
 
           <div className="copyright">
-            <p className="p-text">@2022 AMAN</p>
+            <p className="p-text">@{date.getFullYear()} AMAN</p>
             <p className="p-text">All rights reserved</p>
           </div>
         </div>

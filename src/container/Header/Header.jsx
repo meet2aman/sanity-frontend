@@ -63,7 +63,7 @@ function Header() {
               {isOpen && (
                 <motion.div>
                   <h3 className="card-h3">Hey! What's Up.</h3>
-                  <p className="card-para">Do You Want Me to Hire.</p>
+                  <p className="card-para">Do You Want to hire me.</p>
                 </motion.div>
               )}
             </motion.div>
@@ -73,7 +73,7 @@ function Header() {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               className="tag-cmp app__flex"
             >
-              <p className="p-text">Web Developer</p>
+              <p className="p-text">FullStack Web Developer</p>
               <p className="p-text">Freelancer</p>
             </motion.div>
           </div>
@@ -99,7 +99,7 @@ function Header() {
           whileInView={scaleVariants.whileInView}
           className="app__header-circles"
         >
-          {[images.flutter, images.react, images.sass, images.redux].map(
+          {[images.nextjs, images.react, images.sass, images.tailwind].map(
             (circle, index) => (
               <motion.div
                 whileHover={{ scale: 1.2, rotate: 180 }}

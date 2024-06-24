@@ -17,12 +17,12 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-
+import nextjs from "../assets/Next.js.svg";
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
-
+import tailwind from "../assets/tailwind.svg";
 import amanP from "../assets/amanP.png";
 import circle from "../assets/circle.svg";
 import AMAN from "../assets/AMAN.png";
@@ -62,7 +62,7 @@ export default {
   about02,
   about03,
   about04,
-
+  nextjs,
   circle,
   AMAN,
   adidas,
@@ -71,5 +71,6 @@ export default {
   bolt,
   nb,
   skype,
+  tailwind,
   spotify,
 };
