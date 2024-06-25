@@ -1,10 +1,12 @@
 import React from "react";
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { useTheme } from "../context/themeProvider";
 
 const SocialMedia = () => {
+  const { theme } = useTheme();
   return (
-    <div className="app__social">
+    <div className={`app__social ${theme}`}>
       <div>
         <a href="https://x.com/Amankushwaha200" target="_blank">
           <BsTwitterX />

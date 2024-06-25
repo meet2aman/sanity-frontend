@@ -1,8 +1,10 @@
 import React from "react";
+import { useTheme } from "../context/themeProvider";
 
 const NavigationDots = ({ active }) => {
+  const { theme } = useTheme();
   return (
-    <div className="app__navigation">
+    <div className={`app__navigation ${theme}`}>
       {["home", "about", "work", "skills", "testimonial", "contact"].map(
         (item, index) => (
           <a

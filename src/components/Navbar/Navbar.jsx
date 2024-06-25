@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./Navbar.scss";
 import SocialMedia from "../SocialMedia";
+import ToggleTheme from "../ToggleButton";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,6 +25,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div>
+        <ToggleTheme />
+      </div>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

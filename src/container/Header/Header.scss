@@ -1,10 +1,9 @@
 #home {
-  position: relative;
-  background: url("../../assets/bgIMG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-
+  // background: url("../../assets/bgIMG.png");
+  // position: relative;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: repeat;
   // disable the default padding styles
   .app__wrapper {
     padding: 0;
@@ -34,6 +33,27 @@
   @media screen and (max-width: 450px) {
     padding: 6rem 1rem 2rem;
   }
+}
+#home.light {
+  background: url("../../assets/bgIMG.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+#home.dark {
+  background-color: #020617;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+.app__header.dark {
+  background-color: #020617 !important;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .app__header-info {

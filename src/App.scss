@@ -1,20 +1,28 @@
 .app {
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
   font-family: var(--font-base);
 }
-
-.app__whitebg {
+// use dark and light mode here 
+.app__whitebg.light {
   background-color: var(--white-color);
 }
 
-.app__primarybg {
+.app__primarybg.light {
   background-color: var(--primary-color);
 }
+
+.app__whitebg.dark {
+  background-color: black;
+}
+
+.app__primarybg.dark {
+  background-color: #030712;
+}
+// use dark and light mode here 
 
 .app__container {
   width: 100%;
   min-height: 100vh;
-
   display: flex;
   flex-direction: row;
 }
@@ -155,7 +163,7 @@
   div:nth-child(1) {
     &:hover {
       background-color: #000407;
-      border-color: #0b65db;
+      border-color: #fff;
 
       svg {
         color: var(--white-color);
